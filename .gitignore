@@ -1,0 +1,16 @@
+# KiCad per-user editor state and caches
+*.kicad_prl
+fp-info-cache
+
+# KiCad automatic backups
+*-backups/
+
+# working files
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+erc.json
+drc.json
+
+# OS related
+.directory

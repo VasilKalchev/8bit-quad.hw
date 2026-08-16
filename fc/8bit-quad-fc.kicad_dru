@@ -1,0 +1,15 @@
+(version 1)
+
+# Home photoresist, two layer.
+#
+# Read out of the Eagle board, where this rule set was called
+# "VaSe7u - Photo method". The constraints themselves live in the project
+# file under Board Setup; they are repeated here so the ruleset is named
+# and readable without opening KiCad.
+#
+#   minimum clearance      0.4572 mm  (18 mil)  mdWireWire, mdPadPad, mdViaVia
+#   minimum track width    0.4064 mm  (16 mil)  msWidth
+#   minimum hole to hole   0.3556 mm  (14 mil)  mdDrill
+#   copper to board edge   0.4572 mm  (18 mil)  mdCopperDimension
+#   minimum drill          0.8    mm            msDrill
+#   SMD clearances         0.254  mm  (10 mil)  mdSmdPad, mdSmdVia, mdSmdSmd

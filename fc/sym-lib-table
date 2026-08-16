@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "8bit-quad-fc") (type "KiCad") (uri "${KIPRJMOD}/8bit-quad-fc.kicad_sym") (options "") (descr ""))
+)

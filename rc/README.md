@@ -1,7 +1,9 @@
 # Remote
 
 There is no board design here. The remote was hand wired on protoboard around
-an Arduino Nano and an nRF24L01+ module, and nothing was ever drawn for it.
+an Arduino Nano and an nRF24L01+ module, and nothing was ever drawn for it. It
+is visible on the right of
+[`gallery/20180117_133531.webp`](../gallery/20180117_133531.webp).
 
 What is recorded instead is what that hardware had to provide, read out of the
 `8bit-quad-rc` firmware in the [firmware

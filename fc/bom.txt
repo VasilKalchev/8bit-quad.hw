@@ -1,0 +1,88 @@
+Bill of materials, 8bit-quad flight controller
+
+Generated from the KiCad schematic, so it is complete by construction.
+Regenerate with:
+
+  kicad-cli sch export bom --group-by 'Value,Footprint' \
+      --fields 'Reference,Value,Footprint,${QUANTITY}' 8bit-quad-fc.kicad_sch
+
+Values are as drawn, with Eagle package suffixes stripped where they only
+repeated the package column. Symbol names come from the original Eagle
+schematic.
+
+Resistors
+---------
+
+  Qty  Value  Symbol  Package  References
+    1  110k   R-EU    R1206    R1AB0
+    1  20k    R-EU    R1206    R1BB0
+    2  100k   R-EU    R1206    R1L0,R3L0
+    1  680    R-EU    R1206    R1P0
+    1  10k    R-EU    R1206    R1U0
+    1  9k1    R-EU    R1206    R2B0
+    2  33     R-EU    R1206    R2L0,R4L0
+    2  130    R-EU    R1206    R2U0,R3U0
+
+Capacitors
+----------
+
+  Qty  Value  Symbol  Package  References
+    8  10u    C-EU    C1206    C1B0,C1U0,C2P0,C3P0,C4I0,C4N0,C4P0,C6P0
+    2  100p   C-EU    C1206    C1I0,C1N0
+    6  100n   C-EU    C1206    C1P0,C2U0,C3I0,C3N0,C4U0,C5U0
+    2  22p    C-EU    C1206    C1X0,C2X0
+    2  1n     C-EU    C1206    C2I0,C2N0
+    1  470p   C-EU    C1206    C3U0
+    2  100u   C-EU    C3225    C5I0,C5N0
+    1  10n    C-EU    C1206    C5P0
+
+Semiconductors
+--------------
+
+  Qty  Value          Symbol         Package            References
+    1  blue           LED            1206               L1P0
+    1  red            LED            1206               L1U0
+    1  green          LED            1206               L2U0
+    3  TSM3404        BSS123         SOT23              Q1L0,Q1P0,Q2L0
+    1  ATMEGA328P-PU  ATMEGA328P-PU  DIP254P762X457-28  UC0
+    1  7805           78             TO220V             VR1
+    1  TS1117BCW-3.3  V_REG_LM1117   SOT223             VR2
+
+Crystal and fuse
+----------------
+
+  Qty  Value  Symbol   Package  References
+    1  2A     PPTC     1206     F1P0
+    1  16MHz  CRYSTAL  HC49_S   XTAL0
+
+Modules
+-------
+
+  Qty  Value         Symbol                         Package               References
+    1  MPU6050/9250  PINHD-1X8                      1X08                  IMU0
+    1  MPU6050/9250  PINHD-1X5                      1X05                  IMU_MINI0
+    1  nRF24L01+     NRF24L01+_PA_LNA_BREAKOUT_SMD  NRF24L01+_PA_LNA_SMD  NRF24L01+0
+
+Connectors and headers
+----------------------
+
+  Qty  Value            Symbol      Package     References
+    1  FTDI Basic       FTDI_BASIC  FTDI_BASIC  FTDI0
+    1  AVRISP-6         AVRISP      AVRISP      ISP0
+    2  1x2 right angle  PINHD-1X2   1X02_90     J1L0,J2L0
+    1  TL               PINHD-1X3   1X03_90     J1M0
+    1  LiPo             CONN_02     JST-2-PTH   J1P0
+    1  TR               PINHD-1X3   1X03_90     J2M0
+    1  BL               PINHD-1X3   1X03_90     J3M0
+    1  BR               PINHD-1X3   1X03_90     J4M0
+
+Switch and test points
+----------------------
+
+  Qty  Value    Symbol                 Package                   References
+    1  Restart  MOMENTARY-SWITCH-SPST  TACTILE_SWITCH_PTH_6.0MM  B1U0
+    1  0V       TP                     TP10SQ                    TP1
+    1  3.3V     TP                     TP10SQ                    TP2
+    1  5.0V     TP                     TP10SQ                    TP3
+
+Total: 62 components in 40 distinct lines.
